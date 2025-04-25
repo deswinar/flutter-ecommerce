@@ -1,0 +1,33 @@
+[
+    {
+      "id": "1",
+      "name": "Fruits",
+      "imageUrl": "/images/categories/category-fruits.webp"
+    },
+    {
+      "id": "2",
+      "name": "Vegetables",
+      "imageUrl": "/images/categories/category-vegetables.webp"
+    },
+    {
+      "id": "3",
+      "name": "Dairy",
+      "imageUrl": "/images/categories/category-dairy.webp"
+    },
+    {
+      "id": "4",
+      "name": "Herbs",
+      "imageUrl": "/images/categories/category-herbs.webp"
+    },
+    {
+      "id": "5",
+      "name": "Grains & Rice",
+      "imageUrl": "/images/categories/category-rice.webp"
+    },
+    {
+      "id": "6",
+      "name": "Egg & Poultry",
+      "imageUrl": "/images/categories/category-egg.webp"
+    }
+  ]
+  

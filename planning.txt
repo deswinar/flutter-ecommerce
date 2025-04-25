@@ -1,0 +1,82 @@
+Section
+🧭 Hero Banner / Carousel	Promotions, seasonal campaigns, or featured products
+🔎 Search Bar	Let users instantly find products
+🏷️ Category Shortcuts	Quick access to top-level categories (e.g., Food, Fashion)
+🛍️ Featured Products	Best-sellers, curated picks, or promoted items
+🌟 New Arrivals / Trending	Highlights what's hot or just added
+🔁 Recently Viewed	If logged in, show personalized recent items
+💬 Customer Reviews	Social proof and trust-building
+🏪 Nearby Sellers / Stores	Especially useful for local e-commerce
+📦 Order Summary (if logged in)	Current order status or quick access to recent orders
+
+Categories
+
+🌾 Fresh from the Farm
+Fruits
+
+Vegetables
+
+Herbs & Spices
+
+Grains & Rice
+
+Dairy Products
+
+Eggs & Poultry
+
+🎣 Catch of the Day
+Fresh Fish
+
+Shellfish & Seafood
+
+Dried & Processed Fish
+
+Fish-Based Products (e.g. fish sauce, crackers)
+
+🛶 Locally Made Goods
+Handmade Crafts
+
+Woven Baskets & Bags
+
+Pottery & Ceramics
+
+Wooden Utensils & Furniture
+
+Traditional Clothing & Fabrics
+
+🍯 Homemade & Processed
+Jams & Preserves
+
+Traditional Snacks
+
+Pickles & Fermented Foods
+
+Herbal Teas
+
+Honey & Palm Sugar
+
+🧺 Home & Living
+Natural Cleaning Products
+
+Organic Soaps & Skincare
+
+Plant-Based Oils & Balms
+
+Candles & Incense
+
+🌱 Gardening & Seeds
+Plant Seeds & Seedlings
+
+Gardening Tools
+
+Organic Fertilizers
+
+Compost & Soil Additives
+
+🐓 Animal Husbandry Products
+Organic Animal Feed
+
+Small Livestock (optional/local rule-dependent)
+
+Natural Supplements
+

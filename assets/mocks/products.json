@@ -1,0 +1,77 @@
+[
+    {
+      "id": "1",
+      "name": "Organic Mango",
+      "description": "Sweet and fresh mango from local farmers",
+      "price": 25000,
+      "originalPrice": 30000,
+      "isDiscounted": true,
+      "rating": 4.7,
+      "reviewCount": 150,
+      "soldCount": 1200,
+      "category": "Fruits",
+      "imageUrl": "https://picsum.photos/200.webp?random=1",
+      "imageGallery": [
+        "https://picsum.photos/400.webp?random=11",
+        "https://picsum.photos/400.webp?random=12"
+      ],
+      "vouchers": ["Free Juice Sample", "10% Off on Fruits"],
+      "freeShipping": true
+    },
+    {
+      "id": "2",
+      "name": "Fresh Avocado",
+      "description": "Creamy and nutritious avocados",
+      "price": 30000,
+      "originalPrice": 35000,
+      "isDiscounted": true,
+      "rating": 4.5,
+      "reviewCount": 200,
+      "soldCount": 800,
+      "category": "Fruits",
+      "imageUrl": "https://picsum.photos/200.webp?random=2",
+      "imageGallery": [
+        "https://picsum.photos/400.webp?random=21",
+        "https://picsum.photos/400.webp?random=22"
+      ],      "vouchers": ["Free Guacamole Recipe", "5% Off on Avocados"],
+      "freeShipping": false
+    },
+    
+    {
+      "id": "3",
+      "name": "Organic Banana",
+      "description": "Fresh and organic bananas",
+      "price": 15000,
+      "originalPrice": 20000,
+      "isDiscounted": true,
+      "rating": 4.8,
+      "reviewCount": 300,
+      "soldCount": 1500,
+      "category": "Fruits",
+      "imageUrl": "https://picsum.photos/200.webp?random=3",
+      "imageGallery": [
+        "https://picsum.photos/400.webp?random=31",
+        "https://picsum.photos/400.webp?random=32"
+      ],      "vouchers": ["Free Banana Bread Recipe", "10% Off on Bananas"],
+      "freeShipping": true
+    },
+    {
+      "id": "4",
+      "name": "Organic Grapes",
+      "description": "Sweet and juicy organic grapes",
+      "price": 20000,
+      "originalPrice": 25000,
+      "isDiscounted": true,
+      "rating": 4.6,
+      "reviewCount": 180,
+      "soldCount": 900,
+      "category": "Fruits",
+      "imageUrl": "https://picsum.photos/200.webp?random=4",
+      "imageGallery": [
+        "https://picsum.photos/400.webp?random=41",
+        "https://picsum.photos/400.webp?random=42"
+      ],      "vouchers": ["Free Grape Jam Recipe", "5% Off on Grapes"],
+        "freeShipping": false    
+    }
+]
+  
