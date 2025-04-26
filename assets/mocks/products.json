@@ -1,77 +1,230 @@
 [
-    {
-      "id": "1",
-      "name": "Organic Mango",
-      "description": "Sweet and fresh mango from local farmers",
-      "price": 25000,
-      "originalPrice": 30000,
-      "isDiscounted": true,
-      "rating": 4.7,
-      "reviewCount": 150,
-      "soldCount": 1200,
-      "category": "Fruits",
-      "imageUrl": "https://picsum.photos/200.webp?random=1",
-      "imageGallery": [
-        "https://picsum.photos/400.webp?random=11",
-        "https://picsum.photos/400.webp?random=12"
-      ],
-      "vouchers": ["Free Juice Sample", "10% Off on Fruits"],
-      "freeShipping": true
-    },
-    {
-      "id": "2",
-      "name": "Fresh Avocado",
-      "description": "Creamy and nutritious avocados",
-      "price": 30000,
-      "originalPrice": 35000,
-      "isDiscounted": true,
-      "rating": 4.5,
-      "reviewCount": 200,
-      "soldCount": 800,
-      "category": "Fruits",
-      "imageUrl": "https://picsum.photos/200.webp?random=2",
-      "imageGallery": [
-        "https://picsum.photos/400.webp?random=21",
-        "https://picsum.photos/400.webp?random=22"
-      ],      "vouchers": ["Free Guacamole Recipe", "5% Off on Avocados"],
-      "freeShipping": false
-    },
-    
-    {
-      "id": "3",
-      "name": "Organic Banana",
-      "description": "Fresh and organic bananas",
-      "price": 15000,
-      "originalPrice": 20000,
-      "isDiscounted": true,
-      "rating": 4.8,
-      "reviewCount": 300,
-      "soldCount": 1500,
-      "category": "Fruits",
-      "imageUrl": "https://picsum.photos/200.webp?random=3",
-      "imageGallery": [
-        "https://picsum.photos/400.webp?random=31",
-        "https://picsum.photos/400.webp?random=32"
-      ],      "vouchers": ["Free Banana Bread Recipe", "10% Off on Bananas"],
-      "freeShipping": true
-    },
-    {
-      "id": "4",
-      "name": "Organic Grapes",
-      "description": "Sweet and juicy organic grapes",
-      "price": 20000,
-      "originalPrice": 25000,
-      "isDiscounted": true,
-      "rating": 4.6,
-      "reviewCount": 180,
-      "soldCount": 900,
-      "category": "Fruits",
-      "imageUrl": "https://picsum.photos/200.webp?random=4",
-      "imageGallery": [
-        "https://picsum.photos/400.webp?random=41",
-        "https://picsum.photos/400.webp?random=42"
-      ],      "vouchers": ["Free Grape Jam Recipe", "5% Off on Grapes"],
-        "freeShipping": false    
-    }
+  {
+    "id": "1",
+    "name": "Organic Mango",
+    "description": "Sweet and fresh mango from local farmers",
+    "price": 25000,
+    "originalPrice": 30000,
+    "isDiscounted": true,
+    "rating": 4.7,
+    "reviewCount": 150,
+    "soldCount": 1200,
+    "category": "1",
+    "imageUrl": "https://picsum.photos/200.webp?random=1",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=11",
+      "https://picsum.photos/400.webp?random=12"
+    ],
+    "vouchers": ["Free Juice Sample", "10% Off on Fruits"],
+    "freeShipping": true
+  },
+  {
+    "id": "2",
+    "name": "Fresh Avocado",
+    "description": "Creamy and nutritious avocados",
+    "price": 30000,
+    "originalPrice": 35000,
+    "isDiscounted": true,
+    "rating": 4.5,
+    "reviewCount": 200,
+    "soldCount": 800,
+    "category": "1",
+    "imageUrl": "https://picsum.photos/200.webp?random=2",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=21",
+      "https://picsum.photos/400.webp?random=22"
+    ],
+    "vouchers": ["Free Guacamole Recipe", "5% Off on Avocados"],
+    "freeShipping": false
+  },
+  {
+    "id": "3",
+    "name": "Organic Carrot",
+    "description": "Crunchy and healthy carrots",
+    "price": 12000,
+    "originalPrice": 15000,
+    "isDiscounted": true,
+    "rating": 4.6,
+    "reviewCount": 180,
+    "soldCount": 950,
+    "category": "2",
+    "imageUrl": "https://picsum.photos/200.webp?random=3",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=31",
+      "https://picsum.photos/400.webp?random=32"
+    ],
+    "vouchers": ["5% Off on Vegetables"],
+    "freeShipping": true
+  },
+  {
+    "id": "4",
+    "name": "Fresh Spinach",
+    "description": "Organic and nutrient-rich spinach leaves",
+    "price": 10000,
+    "originalPrice": 12000,
+    "isDiscounted": true,
+    "rating": 4.4,
+    "reviewCount": 100,
+    "soldCount": 600,
+    "category": "2",
+    "imageUrl": "https://picsum.photos/200.webp?random=4",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=41",
+      "https://picsum.photos/400.webp?random=42"
+    ],
+    "vouchers": ["Free Spinach Salad Recipe"],
+    "freeShipping": false
+  },
+  {
+    "id": "5",
+    "name": "Fresh Milk",
+    "description": "Pure and fresh dairy milk",
+    "price": 18000,
+    "originalPrice": 22000,
+    "isDiscounted": true,
+    "rating": 4.8,
+    "reviewCount": 250,
+    "soldCount": 1300,
+    "category": "3",
+    "imageUrl": "https://picsum.photos/200.webp?random=5",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=51",
+      "https://picsum.photos/400.webp?random=52"
+    ],
+    "vouchers": ["Buy 1 Get 1 50% Off"],
+    "freeShipping": true
+  },
+  {
+    "id": "6",
+    "name": "Cheddar Cheese",
+    "description": "Rich and creamy cheddar cheese",
+    "price": 40000,
+    "originalPrice": 45000,
+    "isDiscounted": true,
+    "rating": 4.7,
+    "reviewCount": 180,
+    "soldCount": 750,
+    "category": "3",
+    "imageUrl": "https://picsum.photos/200.webp?random=6",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=61",
+      "https://picsum.photos/400.webp?random=62"
+    ],
+    "vouchers": ["Free Cheese Tasting"],
+    "freeShipping": false
+  },
+  {
+    "id": "7",
+    "name": "Fresh Basil",
+    "description": "Aromatic and fresh basil leaves",
+    "price": 8000,
+    "originalPrice": 10000,
+    "isDiscounted": true,
+    "rating": 4.5,
+    "reviewCount": 90,
+    "soldCount": 400,
+    "category": "4",
+    "imageUrl": "https://picsum.photos/200.webp?random=7",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=71",
+      "https://picsum.photos/400.webp?random=72"
+    ],
+    "vouchers": ["Free Pesto Recipe"],
+    "freeShipping": true
+  },
+  {
+    "id": "8",
+    "name": "Cilantro Bunch",
+    "description": "Freshly picked cilantro for cooking",
+    "price": 7000,
+    "originalPrice": 9000,
+    "isDiscounted": true,
+    "rating": 4.3,
+    "reviewCount": 70,
+    "soldCount": 300,
+    "category": "4",
+    "imageUrl": "https://picsum.photos/200.webp?random=8",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=81",
+      "https://picsum.photos/400.webp?random=82"
+    ],
+    "vouchers": ["10% Off on Herbs"],
+    "freeShipping": false
+  },
+  {
+    "id": "9",
+    "name": "Basmati Rice",
+    "description": "Premium quality long-grain rice",
+    "price": 60000,
+    "originalPrice": 70000,
+    "isDiscounted": true,
+    "rating": 4.9,
+    "reviewCount": 300,
+    "soldCount": 2000,
+    "category": "5",
+    "imageUrl": "https://picsum.photos/200.webp?random=9",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=91",
+      "https://picsum.photos/400.webp?random=92"
+    ],
+    "vouchers": ["Free Recipe Book"],
+    "freeShipping": true
+  },
+  {
+    "id": "10",
+    "name": "Brown Rice",
+    "description": "Healthy and organic brown rice",
+    "price": 55000,
+    "originalPrice": 65000,
+    "isDiscounted": true,
+    "rating": 4.7,
+    "reviewCount": 200,
+    "soldCount": 1700,
+    "category": "5",
+    "imageUrl": "https://picsum.photos/200.webp?random=10",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=101",
+      "https://picsum.photos/400.webp?random=102"
+    ],
+    "vouchers": ["5% Off on Rice"],
+    "freeShipping": false
+  },
+  {
+    "id": "11",
+    "name": "Fresh Chicken Eggs",
+    "description": "Farm-fresh chicken eggs",
+    "price": 25000,
+    "originalPrice": 30000,
+    "isDiscounted": true,
+    "rating": 4.6,
+    "reviewCount": 220,
+    "soldCount": 1400,
+    "category": "6",
+    "imageUrl": "https://picsum.photos/200.webp?random=11",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=111",
+      "https://picsum.photos/400.webp?random=112"
+    ],
+    "vouchers": ["10% Off on Eggs"],
+    "freeShipping": true
+  },
+  {
+    "id": "12",
+    "name": "Free-range Chicken",
+    "description": "Organic free-range chicken meat",
+    "price": 80000,
+    "originalPrice": 90000,
+    "isDiscounted": true,
+    "rating": 4.8,
+    "reviewCount": 270,
+    "soldCount": 1100,
+    "category": "6",
+    "imageUrl": "https://picsum.photos/200.webp?random=12",
+    "imageGallery": [
+      "https://picsum.photos/400.webp?random=121",
+      "https://picsum.photos/400.webp?random=122"
+    ],
+    "vouchers": ["Free Spice Mix for Chicken"],
+    "freeShipping": false
+  }
 ]
-  

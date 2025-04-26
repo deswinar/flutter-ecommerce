@@ -12,6 +12,7 @@ abstract class ProductRemoteDataSource {
   Future<void> deleteProduct(String id);
 
   Future<List<ProductModel>> fetchPopularProducts();
+  Future<List<ProductModel>> fetchProductsByCategory(String category);
 }
 
 @LazySingleton(as: ProductRemoteDataSource)
@@ -57,11 +58,24 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
     print('Product deleted: $id');
   }
 
+  /// Fetches popular products from a local JSON file.
   @override
   Future<List<ProductModel>> fetchPopularProducts() async {
     final response = await rootBundle.loadString('assets/mocks/products.json');
     final List<dynamic> data = json.decode(response) as List<dynamic>;
 
     return data.map((json) => ProductModel.fromJson(json as Map<String, dynamic>)).toList();
+  }
+
+  /// Fetches products by category from a local JSON file.
+  @override
+  Future<List<ProductModel>> fetchProductsByCategory(String category) async {
+    final response = await rootBundle.loadString('assets/mocks/products.json');
+    final List<dynamic> data = json.decode(response) as List<dynamic>;
+
+    return data
+        .where((json) => (json as Map<String, dynamic>)['category'] == category)
+        .map((json) => ProductModel.fromJson(json as Map<String, dynamic>))
+        .toList();
   }
 }

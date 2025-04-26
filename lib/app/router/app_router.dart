@@ -1,4 +1,5 @@
 import 'package:ecommerce/features/product/presentation/pages/customer/product_detail_customer_page.dart';
+import 'package:ecommerce/features/product_by_category/presentation/pages/product_by_category_page.dart';
 
 import '../../features/main_menu/presentation/pages/main_menu_page.dart';
 
@@ -23,5 +24,13 @@ final GoRouter appRouter = GoRouter(
         return ProductDetailCustomerPage(id: productId);
       },
     ),
+    GoRoute(
+      path: '/customer/product/category/:categoryId',
+      name: 'customer_product_by_category',
+      builder: (context, state) {
+        final categoryId = state.pathParameters['categoryId']!;
+        return ProductByCategoryPage(categoryId: categoryId);
+      },
+    )
   ],
 );

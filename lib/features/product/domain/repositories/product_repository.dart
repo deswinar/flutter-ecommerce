@@ -10,4 +10,5 @@ abstract class ProductRepository {
   Future<Either<Failure, ProductEntity>> getProductDetail(String id);
 
   Future<Either<Failure, List<ProductEntity>>> getPopularProducts();
+  Future<Either<Failure, List<ProductEntity>>> getProductsByCategory(String category);
 }

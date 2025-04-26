@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:ecommerce/core/usecases/usecase.dart';
 import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
 
@@ -7,12 +8,13 @@ import '../entities/product_entity.dart';
 import '../repositories/product_repository.dart';
 
 @injectable
-class GetProductDetailUseCase {
+class GetProductDetailUseCase implements UseCase<ProductEntity, GetProductDetailParams> {
   final ProductRepository repository;
 
   GetProductDetailUseCase(this.repository);
 
-  Future<Either<Failure, ProductEntity>> call(GetProductDetailParams params) {
+  @override
+  Future<Either<Failure, ProductEntity>> call(GetProductDetailParams params) async {
     return repository.getProductDetail(params.id);
   }
 }

@@ -65,6 +65,7 @@ class HomeCubit extends Cubit<HomeState> {
 
   CategoryUiModel _mapToCategoryUiModel(CategoryEntity entity) {
     return CategoryUiModel(
+      id: entity.id,
       name: entity.name,
       imageUrl: entity.imageUrl ?? '',
     );

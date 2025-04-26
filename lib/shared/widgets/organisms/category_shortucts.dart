@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CategoryShortcutItem {
   final CategoryUiModel category;
-  final VoidCallback onTap;
+  final ValueChanged<CategoryUiModel> onTap;
 
   CategoryShortcutItem({
     required this.category,
@@ -27,7 +27,7 @@ class CategoryShortcuts extends StatelessWidget {
         itemBuilder: (context, index) {
           final item = items[index];
           return GestureDetector(
-            onTap: item.onTap,
+            onTap: () => item.onTap(item.category),
             child: Column(
               children: [
                 Container(

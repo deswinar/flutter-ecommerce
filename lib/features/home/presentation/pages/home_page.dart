@@ -17,12 +17,18 @@ class HomePage extends StatelessWidget {
           if (state is HomeLoading) {
             return const Center(child: CircularProgressIndicator());
           } else if (state is HomeLoaded) {
-            return HomeTemplate(products: state.products, categories: state.categories, onProductTap: (product) {
-              // TODO: Handle product tap (e.g., navigate to product details page)
-              print('Product tapped: ${product.name}');
-              context.push('/customer/product/${product.id}');
-              
-            },);
+            return HomeTemplate(products: state.products, categories: state.categories, 
+              onProductTap: (product) {
+                // Handle product tap
+                print('Product tapped: ${product.name}');
+                context.push('/customer/product/${product.id}');
+              },
+              onCategoryTap: (category) {
+                // Handle category tap
+                print('Category tapped: ${category.name}');
+                context.push('/customer/product/category/${category.id}');
+              }
+            );
           } else if (state is HomeError) {
             return Center(child: Text(state.message));
           }

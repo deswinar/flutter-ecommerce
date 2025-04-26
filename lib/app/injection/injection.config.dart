@@ -63,6 +63,8 @@ import 'package:ecommerce/features/product/domain/usecases/get_popular_products_
     as _i49;
 import 'package:ecommerce/features/product/domain/usecases/get_product_detail_usecase.dart'
     as _i564;
+import 'package:ecommerce/features/product/domain/usecases/get_products_by_category_usecase.dart'
+    as _i547;
 import 'package:ecommerce/features/product/domain/usecases/get_products_usecase.dart'
     as _i446;
 import 'package:ecommerce/features/product/domain/usecases/update_product_usecase.dart'
@@ -73,8 +75,8 @@ import 'package:ecommerce/features/product/presentation/cubit/popular_product_cu
     as _i422;
 import 'package:ecommerce/features/product/presentation/cubit/product_cubit.dart'
     as _i845;
-import 'package:ecommerce/features/product/presentation/cubit/product_detail_cubit.dart'
-    as _i739;
+import 'package:ecommerce/features/product_by_category/presentation/cubit/product_by_category_cubit.dart'
+    as _i547;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 
@@ -131,6 +133,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i493.DeleteProductUseCase(gh<_i601.ProductRepository>()));
     gh.factory<_i49.GetPopularProductsUseCase>(
         () => _i49.GetPopularProductsUseCase(gh<_i601.ProductRepository>()));
+    gh.factory<_i547.GetProductsByCategoryUsecase>(() =>
+        _i547.GetProductsByCategoryUsecase(gh<_i601.ProductRepository>()));
     gh.factory<_i446.GetProductsUseCase>(
         () => _i446.GetProductsUseCase(gh<_i601.ProductRepository>()));
     gh.factory<_i564.GetProductDetailUseCase>(
@@ -147,8 +151,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i845.ProductCubit(gh<_i446.GetProductsUseCase>()));
     gh.factory<_i108.ProductDetailCustomerCubit>(() =>
         _i108.ProductDetailCustomerCubit(gh<_i564.GetProductDetailUseCase>()));
-    gh.factory<_i739.ProductDetailCubit>(
-        () => _i739.ProductDetailCubit(gh<_i564.GetProductDetailUseCase>()));
+    gh.factory<_i547.ProductByCategoryCubit>(() =>
+        _i547.ProductByCategoryCubit(gh<_i547.GetProductsByCategoryUsecase>()));
     return this;
   }
 }

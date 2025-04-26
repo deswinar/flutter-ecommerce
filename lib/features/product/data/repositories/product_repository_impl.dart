@@ -86,4 +86,16 @@ class ProductRepositoryImpl implements ProductRepository {
       return Left(ServerFailure('An unknown error occurred'));
     }
   }
+
+  @override
+  Future<Either<Failure, List<ProductEntity>>> getProductsByCategory(String category) async {
+    try {
+      final result = await remoteDataSource.fetchProductsByCategory(category);
+      return Right(result);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (_) {
+      return Left(ServerFailure('An unknown error occurred'));
+    }
+  }
 }
